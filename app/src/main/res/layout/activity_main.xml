@@ -1,0 +1,64 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Fragmento del mapa -->
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Botón: Centrar ubicación -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabCenterLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:contentDescription="Centrar ubicación"
+        android:src="@android:drawable/ic_menu_mylocation"
+        app:backgroundTint="?attr/colorPrimary" />
+
+    <!-- Botón: Ver usuarios disponibles -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabVerUsuarios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="16dp"
+        android:contentDescription="Ver usuarios disponibles"
+        android:src="@android:drawable/ic_menu_info_details"
+        app:backgroundTint="?attr/colorSecondary" />
+
+    <!-- Botón: Cambiar foto perfil -->
+    <Button
+        android:id="@+id/btnCambiarFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cambiar foto"
+        android:layout_gravity="center_horizontal|start"
+        android:layout_margin="16dp" />
+
+    <!-- Botón: Cambiar estado -->
+    <Button
+        android:id="@+id/btnCambiarEstado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estado"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_margin="16dp" />
+
+    <!-- Botón: Cerrar sesión -->
+    <Button
+        android:id="@+id/btnCerrarSesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cerrar sesión"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="16dp" />
+12
+</FrameLayout>
